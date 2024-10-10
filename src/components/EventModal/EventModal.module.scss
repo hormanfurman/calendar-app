@@ -1,0 +1,92 @@
+.eventPopup {
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0px 3px 18px #00000029;
+  border: 1px solid #43425d;
+  border-radius: 10px;
+  padding: 30px 20px 20px;
+  width: 300px;
+  z-index: 1000;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #999;
+  cursor: pointer;
+}
+
+.input,
+.textarea,
+.colorPicker {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 14px;
+  transition: border-color 0.3s;
+
+  &:focus {
+    outline: none;
+    border-color: #3b86ff;
+  }
+}
+
+.textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+.colorPicker {
+  height: 40px;
+  padding: 5px;
+}
+
+.error {
+  color: #ff0000;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.discardButton,
+.editButton,
+.saveButton {
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition:
+    color 0.3s,
+    background-color 0.3s;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover,
+  &:active {
+    background-color: rgba(59, 134, 255, 0.1);
+  }
+}
+
+.discardButton {
+  color: #ff5f5f;
+}
+
+.editButton,
+.saveButton {
+  color: #6a6996;
+}

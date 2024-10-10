@@ -1,0 +1,68 @@
+.eventPreview {
+  width: 300px;
+  max-height: 400px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  padding: 20px;
+
+  h3 {
+    margin: 0 0 15px 0;
+    color: #43425d;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+.eventList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.eventItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.eventTime {
+  font-size: 14px;
+  color: #ffffff;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.eventTitle {
+  font-size: 14px;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #43425d;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
